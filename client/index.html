@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Signal E2EE Demo</title>
+  <title>Secure Call</title>
 </head>
 <body>
-  <h2>Signal-Style Encrypted Chat</h2>
+  <h2>Encrypted Chat + Call</h2>
 
-  <input id="user" placeholder="Username">
-  <button onclick="init()">Init</button><br><br>
+  <button onclick="call()">Start Call</button><br><br>
 
-  <input id="msg" placeholder="Message">
-  <button onclick="send()">Send</button>
+  <video id="local" autoplay muted playsinline width="200"></video>
+  <video id="remote" autoplay playsinline width="200"></video>
 
-  <pre id="log"></pre>
-
-<script type="module" src="app.js"></script>
+  <script type="module" src="app.js"></script>
 </body>
 </html>
